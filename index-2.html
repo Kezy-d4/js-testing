@@ -2,15 +2,53 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>js-testing-lesson-2</title>
   </head>
 
   <body>
     <script>
+      const string = "The revolution will not be televised."; 
+      console.log(string); // "The revolution will not be televised."
+      const badString = string;
+      console.log(badString); // "The revolution will not be televised."
 
+      const one = "Hello, ";
+      const two = "how are you?";
+      const joined = `${one}${two}`;
+      console.log(joined); // "Hello, how are you?"
+
+      const greeting = "Hello";
+      const name = "Chris";
+      console.log(greeting + ", " + name); // "Hello, Chris"
+      console.log(`${greeting}, ${name}`) // "Hello, Chris"
+
+      const song = "Fight the Youth";
+      const score = 9;
+      const highestScore = 10;
+      const output = `I like the song ${song}. I gave it a score of ${
+        (score / highestScore * 100)
+      }%`;     
+      console.log(output); // "I like the song Fight the Youth. I gave it a score of 90%"
+
+      let newLine = `One day you finally knew 
+      what you had to do, and began,`;
+      console.log(newLine);
+      /*
+      "One day you finally knew
+      what you had to do, and began,"
+      */
+
+      const goodQuote = `"I'm not going in there!" Amy said with a rasped voice.`;
+      console.log(goodQuote); // ""I'm not going in there!" Amy said with a rasped voice."
+
+      const bigMouth = 'I\'ve got no right to take my place...'
+      console.log(bigMouth); // "I've got no right to take my place..."
+
+      
     </script>
   </body>
+
 </html>
 
