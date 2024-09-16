@@ -24,10 +24,31 @@
   
   
   <script>
-    let season = 'summer';
+    let season = "autumn";
     let response;
 
     // Add your code here
+    if (season === "summer") {
+      response = "It's Summer — time to head outdoors and have fun in the sun! Visit the park, take a walk on the beach, or go for a swim.";
+
+    } else if (season === "winter") {
+      response = "It's Winter! Cozy up and enjoy some indoor activities with a cup of cocoa, or bundle up and brave the elements outside.";
+
+    } else if (season === "spring") {
+      response = "It's Spring — the flowers outside are blooming!";
+
+    } else if (season === "autumn" || season === "fall") {
+      if (season === "autumn") {
+        response = "It's Autumn — enjoy the colorful splendor of the leaves on the trees!";
+      } else {
+        response = "It's Fall — enjoy the colorful splendor of the leaves on the trees!";
+      }
+
+    } else {
+      response = "I can't tell which season it is, please tell me!";
+    }
+    
+    console.log(response); 
 
     // Don't edit the code below here!
 
