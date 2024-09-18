@@ -20,13 +20,21 @@
     <section class="preview"></section>
   </body>
   <script>
-    let machineActive = true;
+    let machineActive = 1;
     let pwd = "cheese";
 
     let machineResult;
     let pwdResult;
 
     // Add your code here
+    if (machineActive == false) {
+      machineResult = "The machine is switched off, please switch it on so that it can process your password.";
+
+    } else if (machineActive == true) {
+      machineResult = "The machine is switched on, it will now process your password.";
+
+      pwd === "cheese" ? pwdResult = "Password correct, you are now authenticated." : pwdResult = "Please enter the correct password.";
+    }
 
     // Don't edit the code below here!
 
