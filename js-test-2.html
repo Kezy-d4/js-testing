@@ -127,8 +127,26 @@
         (login === "") ? message = "No login" :
         message = "";
 
-      console.log(message);                  
-        
+      console.log(message);       
+      
+      let re1 = new RegExp("^he*y.*?");
+      console.log(re1.test("heeeeeeeeeeeeeeeeeeeeeeey, whattup?")); // true
+      
+      console.log(/^hey/.test("hey")); // true
+      console.log(/^hey/.test("bla hey")); // false
+
+      console.log(/hey$/.test("hey")); // true
+      console.log(/hey$/.test("bla hey")); // true
+      console.log(/hey$/.test("hey you")) // false
+
+      console.log(/^he*y$/.test("heeeeeeeeey")) // true
+
+      console.log(/^he*y.*joe?$/.test("heeeey, how's it going joe")); // true
+
+      console.log(/[a-z]/.test("y")); // true
+      console.log(/[0-9A-Z]/.test("X")); // true
+      
+      
     </script>
   </body>
 
