@@ -32,6 +32,19 @@
       console.log(myNumber);
       // the random() function generates a random number between
       // 0 and up to but not including 1, and returns that number
+
+      function hello(name = "Chris") {
+      console.log(`Hello ${name}!`);
+      }
+
+      hello("Ari"); // Hello Ari!
+      hello(); // Hello Chris!
+
+      (function () {
+      alert("hello");
+      });
+
+
     </script>
   </body>
 
