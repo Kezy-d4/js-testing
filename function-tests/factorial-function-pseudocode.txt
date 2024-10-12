@@ -16,6 +16,7 @@ n(12) * x(2), so n = 24;
 Decrement x(2) once, so x = 1;
 
 x(1) > 1? false;
+
 return n(24);
 n! = 24
 
