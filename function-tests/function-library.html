@@ -49,6 +49,10 @@
       return num ** (33.333333333333333 / 100);
     }
 
+    function findCircumference(num) {
+      return 2 * Math.PI * num;
+    }
+
     input.addEventListener("change", () => {
     const num = parseFloat(input.value);
     if (isNaN(num)) {
@@ -59,6 +63,7 @@
       para.textContent += `${num} factorial is ${factorial(num)}. `;
       para.textContent += `${num} square root is ${squareRoot(num)}. `;
       para.textContent += `${num} cube root is ${cubeRoot(num)}. `
+      para.textContent += `circumference of a circle with radius ${num} is ${findCircumference(num)}. `
     }
     });
 
