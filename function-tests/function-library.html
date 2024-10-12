@@ -44,6 +44,11 @@
       return num ** 0.5;
     }
 
+    function cubeRoot(num) {
+      if (num < 0) return undefined;
+      return num ** (33.333333333333333 / 100);
+    }
+
     input.addEventListener("change", () => {
     const num = parseFloat(input.value);
     if (isNaN(num)) {
@@ -53,9 +58,9 @@
       para.textContent += `${num} cubed is ${cubed(num)}. `;
       para.textContent += `${num} factorial is ${factorial(num)}. `;
       para.textContent += `${num} square root is ${squareRoot(num)}. `;
+      para.textContent += `${num} cube root is ${cubeRoot(num)}. `
     }
     });
-
 
   </script>
 </body>
