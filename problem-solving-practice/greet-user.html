@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greet User</title>
+  </head>
+
+  <body>
+    <script>
+      function greetUser() {
+        let userName = prompt("Hi there! Please enter your username. A valid username must contain between three and eighteen characters.");
+        console.log(userName);
+        console.log(userName.length);
+
+        if (userName === null || userName === "") {
+          alert("Please enter a username.");
+
+        } else if (userName.length < 3 || userName.length > 18) {
+          alert("Invalid username. A valid username must contain between three and eighteen characters.");
+
+        } else if (userName.length >= 3 && userName.length <= 18) {
+          alert("Greetings, " + userName);
+        } 
+      }
+
+      greetUser();    
+    </script>
+  </body>
+
+</html>
