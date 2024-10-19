@@ -9,7 +9,7 @@ Desired Output:
 
 - If the user enters no username or cancels out of the dialog box, display a message to the user: "Please enter a username."
 
-- If the user enters an invalid username, display a message to the user: "Invalid username. A valid username must contain between three and eighteen characters."
+- If the user enters an invalid username, display a message to the user: "Invalid username. A valid username must contain between two and eighteen characters."
 
 - If the user enters a valid username, display a message to the user: "Greetings (username)".
 
