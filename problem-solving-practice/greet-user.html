@@ -11,8 +11,11 @@
     <script>
       function greetUser() {
         let userName = prompt("Hi there! Please enter your username. A valid username must contain between three and eighteen characters.");
-        console.log(userName);
-        console.log(userName.length);
+
+        console.log("Value of username: " + userName);
+        if (userName != null) {
+          console.log("Character length of username: " + userName.length);
+        }
 
         if (userName === null || userName === "") {
           alert("Please enter a username.");
