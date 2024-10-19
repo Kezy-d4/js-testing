@@ -2,10 +2,10 @@ Interface:
 The program will operate entirely within the browser console. 
 
 Input:
-The user will input any username into the input field of a dialog box. A valid username will contain between three and eighteen characters.
+The user will input any username into the input field of a dialog box. A valid username will contain between two and eighteen characters.
 
 Desired Output:
-- Prompt the user to enter a valid username via a pop-up dialog box displaying the message: "Hi there! Please enter your username. A valid username must contain between three and eighteen characters." 
+- Prompt the user to enter a valid username via a pop-up dialog box displaying the message: "Hi there! Please enter your username. A valid username must contain between two and eighteen characters." 
 
 - If the user enters no username or cancels out of the dialog box, display a message to the user: "Please enter a username."
 
@@ -20,7 +20,7 @@ Log value of userName to console
 Log value of userName character length to console
 When user proceeds with no input or cancels
 Display message asking user to input username
-When user proceeds with username containing less than three or more than eighteen characters
+When user proceeds with username containing less than two or more than eighteen characters
 Display message informing user of invalid username, and what is a valid username
-When user proceeds with username containing between three and eighteen characters
+When user proceeds with username containing between two and eighteen characters
 Greet user

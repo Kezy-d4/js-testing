@@ -10,7 +10,7 @@
   <body>
     <script>
       function greetUser() {
-        let userName = prompt("Hi there! Please enter your username. A valid username must contain between three and eighteen characters.");
+        let userName = prompt("Hi there! Please enter your username. A valid username must contain between two and eighteen characters.");
 
         console.log("Value of username (string): " + userName);
         if (userName != null) {
@@ -20,10 +20,10 @@
         if (userName === null || userName === "") {
           alert("Please enter a username.");
 
-        } else if (userName.length < 3 || userName.length > 18) {
-          alert("Invalid username. A valid username must contain between three and eighteen characters.");
+        } else if (userName.length < 2 || userName.length > 18) {
+          alert("Invalid username. A valid username must contain between two and eighteen characters.");
 
-        } else if (userName.length >= 3 && userName.length <= 18) {
+        } else if (userName.length >= 2 && userName.length <= 18) {
           alert("Greetings, " + userName);
         } 
       }
