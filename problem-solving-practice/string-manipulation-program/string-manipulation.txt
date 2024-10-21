@@ -17,15 +17,14 @@ When user proceeds with empty input or cancels
 When user proceeds with valid input
   Print value of userString to console
 
-Get character length of userString
 When character length of userString is greater than one
-Initialize variable: manipulatedString of data type: string
-Assign value of userString to manipulatedString
+  Initialize variable: manipulatedString of data type: string
+  Assign value of userString to manipulatedString
 
-While character length of manipulatedString is greater than one
-  Get substring of manipulatedString with one character subtracted from the end
-  Assign value of said substring to manipulatedString
-  Print value of manipulatedString to console
+    While character length of manipulatedString is greater than one
+      Get substring of manipulatedString with one character subtracted from the end
+      Assign value of said substring to manipulatedString
+      Print value of manipulatedString to console
 
 
 
