@@ -4,24 +4,31 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>String Manipulation</title>
+    <title>String Down</title>
   </head>
 
   <body>
     <script>
 
-      function stringManipulation() {
-        let userString = prompt("Please enter some text or characters for the program to manipulate. ");
+      function downString() {
 
-        if (userString === null) {
-          alert("Please enter some text or characters");
-        } else {
-          console.log(userString);
-          console.log(userString.length);
+        let str = prompt("Enter any string. The Down-String program will print progressively shorter substrings of your input string to the console. Maybe say hello!");
+
+        if (str === null) {
+          alert("Cancelled.");
+        } else {  
+          console.log(str.length);
+          console.log(str);
+                  
+          let subStringEnd = str.slice(0, -1);
+
+          for (let i = subStringEnd; i.length > 0; i = i.slice(0, -1)) {
+          console.log(i);
+          }
         }
       }
-    
-      stringManipulation();
+
+      downString();
 
     </script>
   </body>
