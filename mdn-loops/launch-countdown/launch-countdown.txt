@@ -1,0 +1,20 @@
+The Problem:
+Loop from the number 10 down to 0. For each iteration number, print a message to the screen: "Countdown: (current iteration number)", but if the current iteration number is 0, print: "Blast off!".
+
+Inputs & Interface:
+There will be no user input. The program will print messages in the form of <p> elements to the screen.
+
+Desired Output:
+A series of messages printed in the form of <p> elements to the screen which count down from the number 10 to 1, followed by a final message: "Blast off!".
+
+Pseudo-Code:
+- Initialize a counter variable "i" with the value 10 (number)
+- 
+
+
+
+
+
+
+
+
