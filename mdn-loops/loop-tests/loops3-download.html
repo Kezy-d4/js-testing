@@ -40,15 +40,11 @@
     }
 
     while (i >= 2) {
-      if (!isPrime(i)) {
-        // Skip to iterator, then continue
-      } else {
+      if (isPrime(i)) {
         para.textContent += `${i}, `
       }
-
+      
       i--;
-
-      continue;
     }
 
     // Don't edit the code below here!
