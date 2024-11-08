@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determine Prime Numbers</title>
+  </head>
+
+  <body>
+    <script>
+      function isPrime(num) {
+        // If a number can be evenly divided (leaving no remainder) by any number besides 1 and itself, we know it isn't prime. 
+        for (let i = 2; i < num; i++) {
+          if (num % i === 0) {
+            return false; 
+          }
+        }
+
+        return true;
+      }
+
+      let i = 50;
+
+      while (i >= 2) {
+        if (isPrime(i)) {
+          console.log(i);
+        }
+        i--;
+      }
+    </script>
+  </body>
+
+</html>
