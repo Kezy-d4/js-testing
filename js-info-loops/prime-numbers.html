@@ -9,7 +9,7 @@
   <body>
     <script>
       function isPrime(num) {
-        // If a number can be evenly divided (leaving no remainder) by any number besides 1 and itself, we know it isn't prime. 
+        // If a given number is evenly divisible (leaving no remainder) by any number besides 1 and itself, then we know it isn't prime. 
         for (let i = 2; i < num; i++) {
           if (num % i === 0) {
             return false; 
