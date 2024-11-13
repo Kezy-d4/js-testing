@@ -16,7 +16,7 @@ blueH3.setAttribute("style", "color: blue;");
 
 const blackPinkDiv= document.createElement("div");
 blackPinkDiv.classList.add("black-pink-div");
-blackPinkDiv.setAttribute("style", "border: black;", "background-color: pink;");
+blackPinkDiv.style.cssText = "background-color: pink; border: 4px solid black;";
 
   const childH1 = document.createElement("h1");
   childH1.classList.add("black-pink-div-child-h1");
