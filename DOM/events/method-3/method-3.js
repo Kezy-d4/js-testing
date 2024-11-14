@@ -6,4 +6,6 @@ function alertFunction() {
 const btn = document.querySelector("#btn");
 
 // METHOD 3
-btn.addEventListener("click", alertFunction);
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+});
