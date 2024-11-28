@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo = {
+      name: 'Men I Trust',
+      nationality: 'French Canadian',
+      genre: 'indie dream pop',
+      numberOfMembers: 3,
+      yearFormed: 2014,
+      split: false,
+      isTogether: function() {
+        if (this.split) {
+          return 'has disbanded';
+        } else {
+          return 'is still together';
+        }
+      },
+
+      albums: [
+        oncleJazz = {
+          name: 'Oncle Jazz',
+          released: 2019,
+        },
+        menITrust = {
+          name: 'Men I Trust',
+          released: 2014,
+        },
+      ],
+
+      bio: function() {
+        return `${this.name} is a ${this.nationality} ${this.genre} band consisting of ${this.numberOfMembers} members and formed in ${this.yearFormed}. At the time of writing, ${this.name} ${this.isTogether()}. The bands first album "${this.albums[1].name}" released in ${this.albums[1].released}.`;
+      },
+
+    };
+
+    // Add your code here
+
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo.bio();
+    section.appendChild(para1);
+  </script>
+
+</html>
