@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Sum Tripled Evens Using Array Methods</title>
+  </head>
+
+  <body>
+    <script>
+
+      function sumTripledEvens(array) {
+
+        // Filter even numbers
+        let evenNums = array.filter((num) => num % 2 === 0);
+
+        // Triple even numbers
+        let evenNumsTripled = evenNums.map((num) => num * 3);
+
+        // Sum tripled even numbers
+        let sumOfTripledEvenNums = evenNumsTripled.reduce((sum, currentNum) => {
+          return sum += currentNum;
+        });
+
+        return sumOfTripledEvenNums;
+
+      }
+      
+      const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,];
+      console.log(sumTripledEvens(array)); // 90
+
+        /* Better solution using chaining
+
+        function sumOfTripledEvens(array) {
+
+          return array
+            .filter((num) => num % 2 === 0)
+            .map((num) => num * 3)
+            .reduce((acc, curr) => acc + curr);
+            
+        }
+
+        */
+
+    </script>
+  </body>
+
+</html>
