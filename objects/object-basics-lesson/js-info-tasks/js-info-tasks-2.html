@@ -46,6 +46,7 @@
         )
         .join(''); // joins ['my', 'Long', 'Word'] into 'myLongWord'
     }
+
     */
 
     // Filter range
@@ -55,6 +56,61 @@
     }
 
     // Filter range "in place"
+    function filterRangeInPlace(arr, a, b) {
+
+      arr.forEach((item, index, array) => {
+        if (!(item >= a && item <= b)) {
+          array.splice(index, 1);
+        }
+      });
+    }
+
+    // Sort in decreasing order
+    function sortInDecreasingOrder(arr) {
+
+      arr = [5, 2, 1, -10, 8];
+
+      arr.sort().reverse(); // arr.sort((a, b) => b - a);
+    }
+
+    // Copy and sort array
+    function copySorted(arr) {
+
+      return arr.slice().sort();
+    }
+
+    // Map to names
+    /*
+    let john = { name: "John", age: 25 };
+    let pete = { name: "Pete", age: 30 };
+    let mary = { name: "Mary", age: 28 };
+
+    let users = [ john, pete, mary ];
+
+    let names = users.map(item => item.name);
+    */
+
+    // Map to objects
+    /*
+    let john = { name: "John", surname: "Smith", id: 1 };
+    let pete = { name: "Pete", surname: "Hunt", id: 2 };
+    let mary = { name: "Mary", surname: "Key", id: 3 };
+
+    let users = [ john, pete, mary ];
+
+    let usersMapped = users.map((user) => {
+      let fullName = `${user.name} ${user.surname}`;
+
+      delete user.name;
+      delete user.surname;
+
+      user['fullname'] = fullName;
+
+      return user;
+    });
+    */
+
+    // Sort users by age
     
 
   </script>
