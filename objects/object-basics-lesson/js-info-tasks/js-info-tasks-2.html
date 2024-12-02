@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS-Info-ArrMethod-Tasks</title>
-    <script src="./js-info-tasks-2-helper.js" defer></script>
   </head>
 
 <body>
@@ -156,10 +155,72 @@
     */
 
     // Filter unique array members
+    /*
+    function getUniqueElements(array) {
+
+      let uniqueElementsArray = [];
+
+      for (const element of array) {
+        if (!uniqueElementsArray.includes(element)) {
+          uniqueElementsArray.push(element);
+        }
+      }
+
+      return uniqueElementsArray;
+
+    }
+
+    let strings = ["Hare", "Krishna", "Hare", "Krishna",
+    "Krishna", "Krishna", "Hare", "Hare", ":-O"
+    ];
+
+    console.log(getUniqueElements(strings)); // Hare, Krishna, :-O
+    */
+
+    // Create keyed object from array
+    /*
+    let newObj = {};
+
+    let users = [
+      {id: 'john', name: "John Smith", age: 20},
+      {id: 'ann', name: "Ann Smith", age: 24},
+      {id: 'pete', name: "Pete Peterson", age: 31},
+    ];
+
+    newObj['id:'] = users[0].id;
+    newObj['id2:'] = users[1].id;
+    newObj['id3:'] = users[2].id;
     
+    console.log(newObj);
+    */
+    
+    function groupById(arr) {
+      let allUsersObject = {};
 
+      arr.reduce((prev, current) => {
+        allUsersObject[current.id] = current;
+        // console.log(allUsersObject);
+      }, allUsersObject);
 
+      return allUsersObject;
+    }
 
+    let users = [
+      {id: 'john', name: "John Smith", age: 20},
+      {id: 'ann', name: "Ann Smith", age: 24},
+      {id: 'pete', name: "Pete Peterson", age: 31},
+    ];
+
+    // allUsersObject[users[0].id] = users[0];
+    // allUsersObject[users[1].id] = users[1];
+    // allUsersObject[users[2].id] = users[2];
+    // console.log(allUsersObject);
+
+    console.log(users);
+    let usersById = groupById(users);
+    console.log(usersById);
+    
+    
   </script>
 </body>
 
